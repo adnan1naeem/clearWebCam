@@ -69,12 +69,17 @@ const Ready = () => {
     [],
     [window.innerHeight]
   );
+  const videoConstraints = {
+    width: 600,
+    height: 600,
+    facingMode: "user",
+  };
   return (
     <div className={classes.main}>
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam height={height} />
+      <Webcam height={height} videoConstraints={videoConstraints} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
