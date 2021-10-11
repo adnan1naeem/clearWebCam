@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/clearWebCam/static/css/main.7532f99d.chunk.css",
+    "main.js": "/clearWebCam/static/js/main.6cff7e10.chunk.js",
+    "main.js.map": "/clearWebCam/static/js/main.6cff7e10.chunk.js.map",
+    "runtime-main.js": "/clearWebCam/static/js/runtime-main.6b45a417.js",
+    "runtime-main.js.map": "/clearWebCam/static/js/runtime-main.6b45a417.js.map",
+    "static/js/2.c399b6bd.chunk.js": "/clearWebCam/static/js/2.c399b6bd.chunk.js",
+    "static/js/2.c399b6bd.chunk.js.map": "/clearWebCam/static/js/2.c399b6bd.chunk.js.map",
+    "static/js/3.4ffa816a.chunk.js": "/clearWebCam/static/js/3.4ffa816a.chunk.js",
+    "static/js/3.4ffa816a.chunk.js.map": "/clearWebCam/static/js/3.4ffa816a.chunk.js.map",
+    "index.html": "/clearWebCam/index.html",
+    "static/css/main.7532f99d.chunk.css.map": "/clearWebCam/static/css/main.7532f99d.chunk.css.map",
+    "static/js/2.c399b6bd.chunk.js.LICENSE.txt": "/clearWebCam/static/js/2.c399b6bd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/clearWebCam/static/media/FontsFree-Net-Axiforma2woff2.d33b50e9.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b45a417.js",
+    "static/js/2.c399b6bd.chunk.js",
+    "static/css/main.7532f99d.chunk.css",
+    "static/js/main.6cff7e10.chunk.js"
+  ]
+}
