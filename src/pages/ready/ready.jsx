@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background: "black",
     height: "100vh",
-    // maxWidth: 1280,
     alignSelf: "center",
   },
   imgbox: {
@@ -70,8 +69,8 @@ const Ready = () => {
     [window.innerHeight]
   );
   const videoConstraints = {
-    width: 600,
-    height: 600,
+    width: 400,
+    height: 400,
     facingMode: "user",
   };
   return (
