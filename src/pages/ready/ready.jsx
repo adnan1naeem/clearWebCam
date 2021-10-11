@@ -6,7 +6,7 @@ import { Button, Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   main: {
     display: "flex",
-    // justifyContent: "center",
+    overflow: "hidden", // justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     background: "black",
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   webcam: {
     width: "100%",
-    maxWidth: 1024,
+    // maxWidth: 1024,
   },
   btnbox: {
     display: "flex",
@@ -57,6 +57,12 @@ const useStyles = makeStyles((theme) => ({
       width: 120,
     },
   },
+  height: {
+    height: 300,
+  },
+  [theme.breakpoints.only("md")]: {
+    height: 400,
+  },
 }));
 
 const Ready = () => {
@@ -66,7 +72,7 @@ const Ready = () => {
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam className={classes.webcam} />
+      <Webcam height={classes.height} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
