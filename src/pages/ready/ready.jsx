@@ -27,24 +27,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    width: 218,
     height: 42.76,
   },
   webcam: {
-    height: 353,
-    width: 342,
-    [theme.breakpoints.only("sm")]: {
-      height: 444,
-      width: 530,
-    },
-    [theme.breakpoints.only("md")]: {
-      height: 444,
-      width: 895,
-    },
-    [theme.breakpoints.up("lg")]: {
-      width: 1174,
-      height: 400,
-    },
+    width: "100%",
+    maxWidth: 1024,
   },
   btnbox: {
     display: "flex",
@@ -61,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 30,
-    lineHeight: "35px",
+    lineHeight: 35,
     letterSpacing: -0.408,
 
     color: "#FFFFFF",
@@ -79,15 +66,7 @@ const Ready = () => {
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam
-        audio={false}
-        width="70%"
-        // height="70%"
-        style={{
-          // height: "70%",
-          width: "100%",
-        }}
-      />
+      <Webcam className={classes.webcam} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
