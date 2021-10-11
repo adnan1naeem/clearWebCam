@@ -13,18 +13,21 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     // maxWidth: 1280,
     alignSelf: "center",
+    [theme.breakpoints.up("lg")]: {
+      height: "100%",
+    },
   },
   imgbox: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: 120,
-    [theme.breakpoints.only("md")]: {
-      height: 140,
-    },
-    [theme.breakpoints.up("lg")]: {
-      height: 180,
-    },
+    // [theme.breakpoints.only("md")]: {
+    //   height: 140,
+    // },
+    // [theme.breakpoints.up("lg")]: {
+    //   height: 180,
+    // },
   },
   logo: {
     height: 42.76,
@@ -37,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: 100,
+    height: 140,
   },
   btn: {
     width: 100,
@@ -48,14 +51,9 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 30,
-    lineHeight: 35,
     letterSpacing: -0.408,
 
     color: "#FFFFFF",
-    [theme.breakpoints.only("sm")]: {
-      fontSize: 35,
-      width: 120,
-    },
   },
 }));
 
