@@ -91,7 +91,11 @@ const NotFound = () => {
       </Box>
       <Box className={classes.lottiebox}>
         <Box className={classes.lottiewrap}>
-          <Lottie className={classes.lottie} animationData={notfoundgif} />
+          <Lottie
+            loop={false}
+            className={classes.lottie}
+            animationData={notfoundgif}
+          />
         </Box>
         <Box className={classes.text}>PLEASE SEE YOUR GATE ATTENDANT</Box>
       </Box>

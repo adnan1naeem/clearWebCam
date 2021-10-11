@@ -57,22 +57,24 @@ const useStyles = makeStyles((theme) => ({
       width: 120,
     },
   },
-  height: {
-    height: 300,
-  },
-  [theme.breakpoints.only("md")]: {
-    height: 400,
-  },
 }));
 
 const Ready = () => {
   const classes = useStyles();
+  const [height, setHeight] = React.useState();
+  React.useEffect(
+    () => {
+      setHeight(window.innerHeight);
+    },
+    [],
+    [window.innerHeight]
+  );
   return (
     <div className={classes.main}>
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam height={classes.height} />
+      <Webcam height={height} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
