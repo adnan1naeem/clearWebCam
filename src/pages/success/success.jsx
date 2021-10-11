@@ -13,9 +13,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background: "#77d79b",
     height: "100vh",
-    [theme.breakpoints.up("lg")]: {
-      height: "100%",
-    },
+    // maxWidth: 1280,
+    alignSelf: "center",
   },
   logobox: {
     display: "flex",
@@ -24,12 +23,8 @@ const useStyles = makeStyles((theme) => ({
     height: 149,
     width: "100%",
     background: "#191919",
-    [theme.breakpoints.up("lg")]: {
-      height: 149,
-    },
   },
   logo: {
-    width: 218,
     height: 42.76,
   },
   lottiebox: {
@@ -45,21 +40,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: 300,
-    [theme.breakpoints.up("lg")]: {
-      height: 409,
-    },
   },
   lottie: {
     width: 164,
     height: 164,
-    [theme.breakpoints.up("lg")]: {
-      width: 361,
-      height: 361,
-    },
-    [theme.breakpoints.only("sm")]: {
-      width: 200,
-      height: 200,
-    },
   },
   text: {
     width: 171,
@@ -72,31 +56,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     letterSpacing: -0.408,
     color: "#FFFFFF",
-    [theme.breakpoints.up("lg")]: {
-      fontSize: 80,
-      lineHeight: "78.75px",
-      width: 414,
-      height: 119,
-    },
-    [theme.breakpoints.only("sm")]: {
-      fontSize: 50,
-      lineHeight: "78.75px",
-      width: 214,
-      height: 99,
-    },
   },
   btnbox: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: 90,
-    [theme.breakpoints.up("lg")]: {
-      height: 161,
-      marginBottom: 300,
-    },
-    [theme.breakpoints.only("sm")]: {
-      height: 150,
-    },
   },
   btn: {
     width: 292,
@@ -113,18 +78,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: -0.408,
 
     color: "#FFFFFF",
-    [theme.breakpoints.up("lg")]: {
-      fontSize: 40,
-      lineHeight: "63.75px",
-      width: 543,
-      height: 111,
-    },
-    [theme.breakpoints.only("sm")]: {
-      fontSize: 30,
-
-      width: 392,
-      height: 80,
-    },
   },
 }));
 
@@ -132,8 +85,8 @@ const Success = () => {
   const classes = useStyles();
   const options = {
     animationData: success,
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
   };
   const { View } = useLottie(options);
   return (

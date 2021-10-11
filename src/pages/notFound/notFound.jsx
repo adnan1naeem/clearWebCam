@@ -13,10 +13,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background: "#ee6a4d",
     height: "100vh",
-    //     maxWidth: 1280,
-    [theme.breakpoints.up("lg")]: {
-      height: 1140,
-    },
+    // maxWidth: 1280,
+    alignSelf: "center",
   },
   logobox: {
     display: "flex",
@@ -25,12 +23,8 @@ const useStyles = makeStyles((theme) => ({
     height: 149,
     width: "100%",
     background: "#191919",
-    [theme.breakpoints.up("lg")]: {
-      height: 150,
-    },
   },
   logo: {
-    width: 218,
     height: 42.76,
   },
   lottiebox: {
@@ -39,55 +33,46 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
   },
   lottiewrap: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: 350,
-    [theme.breakpoints.up("lg")]: {
-      height: 561,
-    },
-    [theme.breakpoints.only("sm")]: {
-      height: 400,
-    },
+    height: 300,
   },
   lottie: {
     width: 164,
     height: 164,
-    [theme.breakpoints.up("lg")]: {
-      width: 361,
-      height: 361,
-    },
+
     [theme.breakpoints.only("sm")]: {
       width: 200,
       height: 200,
     },
   },
   text: {
-    width: 254,
-    height: 344,
+    width: 400,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "47px",
+    fontSize: 40,
+    lineHeight: "63px",
     textAlign: "center",
     letterSpacing: -0.408,
     color: "#FFFFFF",
-    [theme.breakpoints.up("lg")]: {
-      width: 254,
-      height: 100,
-    },
+
     [theme.breakpoints.only("sm")]: {
-      width: 341,
-      height: 300,
       fontSize: 40,
-      lineHeight: "63px",
+      lineHeight: "78.75px",
+      width: 341,
+      height: 99,
+    },
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 30,
+      lineHeight: "58.75px",
+      width: 254,
+      height: 99,
     },
   },
 }));
@@ -96,7 +81,7 @@ const NotFound = () => {
   const options = {
     animationData: notfoundgif,
     loop: true,
-    autoplay: true,
+    autoplay: false,
   };
   const { View } = useLottie(options);
   return (
