@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     //     maxWidth: 1280,
     [theme.breakpoints.up("lg")]: {
-      height: "100%",
+      height: 1140,
     },
   },
   logobox: {
