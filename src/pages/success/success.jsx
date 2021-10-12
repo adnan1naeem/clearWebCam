@@ -88,7 +88,6 @@ const Success = () => {
     loop: false,
     autoplay: false,
   };
-  const { View } = useLottie(options);
   return (
     <div className={classes.main}>
       <Box className={classes.logobox}>
@@ -96,7 +95,11 @@ const Success = () => {
       </Box>
       <Box className={classes.lottiebox}>
         <Box className={classes.lottiewrap}>
-          <Lottie className={classes.lottie} animationData={success} />
+          <Lottie
+            loop={false}
+            className={classes.lottie}
+            animationData={success}
+          />
         </Box>
         <Box className={classes.text}>SEAT 25B</Box>
         <Box className={classes.btnbox}>

@@ -6,12 +6,11 @@ import { Button, Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   main: {
     display: "flex",
-    // justifyContent: "center",
+    overflow: "hidden", // justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     background: "black",
     height: "100vh",
-    // maxWidth: 1280,
     alignSelf: "center",
     [theme.breakpoints.up("lg")]: {
       height: "100%",
@@ -34,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   webcam: {
     width: "100%",
-    maxWidth: 1024,
+    // maxWidth: 1024,
   },
   btnbox: {
     display: "flex",
@@ -59,12 +58,25 @@ const useStyles = makeStyles((theme) => ({
 
 const Ready = () => {
   const classes = useStyles();
+  const [height, setHeight] = React.useState();
+  React.useEffect(
+    () => {
+      setHeight(window.innerHeight);
+    },
+    [],
+    [window.innerHeight]
+  );
+  const videoConstraints = {
+    width: 400,
+    height: 400,
+    facingMode: "user",
+  };
   return (
     <div className={classes.main}>
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam className={classes.webcam} />
+      <Webcam height={height} videoConstraints={videoConstraints} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
