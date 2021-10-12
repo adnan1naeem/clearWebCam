@@ -76,7 +76,7 @@ const Ready = () => {
       <Box className={classes.imgbox}>
         <img src={logo} className={classes.logo} alt="PrivateId Logo" />
       </Box>
-      <Webcam height={height} videoConstraints={videoConstraints} />
+      <Webcam height={600} videoConstraints={videoConstraints} />
       <Box className={classes.btnbox}>
         <Button className={classes.btn}>Ready</Button>
       </Box>
