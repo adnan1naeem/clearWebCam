@@ -52,12 +52,12 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     width: 370,
-    height: 150,
+    height: 130,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 40,
-    lineHeight: "63px",
+    lineHeight: "58px",
     textAlign: "center",
     letterSpacing: -0.408,
     color: "#FFFFFF",
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: 262,
-    height: 65,
+    height: 68,
     background: "#cb3837",
     borderRadius: 53,
     fontFamily: "Axiforma",
