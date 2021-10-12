@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     width: 370,
-    height: 140,
+    height: 150,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -83,11 +83,11 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 26,
     lineHeight: "35px",
     /* identical to box height */
-
-    letterSpacing: -0.408,
+    textTransform: "capitalize",
+    // letterSpacing: -0.408,
 
     color: "#FFFFFF",
   },

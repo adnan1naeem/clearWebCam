@@ -82,7 +82,9 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     marginTop: -4,
-    marginLeft: 5,
+    marginLeft: 6,
+    fontSize: 30,
+    color: "lightgray",
   },
 }));
 
