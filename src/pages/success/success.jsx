@@ -3,7 +3,8 @@ import Lottie from "lottie-react";
 import { useLottie } from "lottie-react";
 import { makeStyles } from "@material-ui/core/styles";
 import logo from "../../assets/logo.png";
-import { Button, Box } from "@material-ui/core";
+import CancelIcon from "@material-ui/icons/Cancel";
+import { IconButton, Box } from "@material-ui/core";
 import success from "../../assets/succes.json";
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -79,6 +80,10 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
   },
+  icon: {
+    marginTop: -4,
+    marginLeft: 5,
+  },
 }));
 
 const Success = () => {
@@ -103,7 +108,9 @@ const Success = () => {
         </Box>
         <Box className={classes.text}>SEAT 25B</Box>
         <Box className={classes.btnbox}>
-          <Button className={classes.btn}>23lk4j23sdlkj23423lk</Button>
+          <IconButton className={classes.btn}>
+            23lk4j23sdlkj23423lk <CancelIcon className={classes.icon} />
+          </IconButton>
         </Box>
       </Box>
     </div>

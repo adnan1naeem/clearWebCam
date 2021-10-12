@@ -45,14 +45,14 @@ const useStyles = makeStyles((theme) => ({
     width: 164,
     height: 164,
 
-    [theme.breakpoints.only("sm")]: {
-      width: 200,
-      height: 200,
-    },
+    // [theme.breakpoints.only("sm")]: {
+    //   width: 200,
+    //   height: 200,
+    // },
   },
   text: {
-    width: 400,
-    height: 100,
+    width: 370,
+    height: 140,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -62,18 +62,34 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: -0.408,
     color: "#FFFFFF",
 
-    [theme.breakpoints.only("sm")]: {
-      fontSize: 40,
-      lineHeight: "78.75px",
-      width: 341,
-      height: 99,
-    },
-    [theme.breakpoints.only("xs")]: {
-      fontSize: 30,
-      lineHeight: "58.75px",
-      width: 254,
-      height: 99,
-    },
+    // [theme.breakpoints.only("sm")]: {
+    //   fontSize: 40,
+    //   lineHeight: "70.75px",
+    //   width: 341,
+    //   height: 149,
+    // },
+    // [theme.breakpoints.only("xs")]: {
+    //   fontSize: 30,
+    //   lineHeight: "58.75px",
+    //   width: 254,
+    //   height: 129,
+    // },
+  },
+  btn: {
+    width: 262,
+    height: 65,
+    background: "#cb3837",
+    borderRadius: 53,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 22,
+    lineHeight: "35px",
+    /* identical to box height */
+
+    letterSpacing: -0.408,
+
+    color: "#FFFFFF",
   },
 }));
 const NotFound = () => {
@@ -98,6 +114,7 @@ const NotFound = () => {
           />
         </Box>
         <Box className={classes.text}>PLEASE SEE YOUR GATE ATTENDANT</Box>
+        <Button className={classes.btn}>Enroll</Button>
       </Box>
     </div>
   );
